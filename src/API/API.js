@@ -51,18 +51,3 @@ export const createTodoAPI = async (todo) => {
 	});
 	return response;
 };
-
-// update data in UI i.e state
-
-// export const MarkCompleted = async (todo) => {
-// 	const { apiData, setApiData } = useContext(APIDataContext);
-// 	todo.isCompleted = !todo.isCompleted; // mark as completed
-// 	const response = await updateTodoAPI(todo);
-// 	if (response === 200) {
-// 		const filterData = apiData.filter((item) => item.id != todo.id);
-// 		filterData.push(todo);
-// 		setApiData(filterData);
-// 	} else {
-// 		alert("Something went wrong @" + "markCompleted");
-// 	}
-// };

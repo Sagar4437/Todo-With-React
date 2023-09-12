@@ -9,9 +9,8 @@ const Home = ({ apiData, setApiData }) => {
 			{apiData.map((todo) => {
 				return (
 					<Body
-						todo={todo}
 						key={todo.id}
-						{...{ apiData, setApiData }}
+						{...{ todo,apiData, setApiData }}
 					/>
 				);
 			})}
